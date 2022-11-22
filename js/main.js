@@ -9,8 +9,8 @@ const personalMovieDB = {
 };
 
 label: for (let i = 0; i < 2; i++) {
-    const a = prompt("Сколько фильмов вы уже посмотрели?", ""),
-        b = +prompt("На сколько оцените его?", "");
+    const a = prompt("Назовите один из последних просмотренных вами фильмов?", ""),
+         b = +prompt("На сколько оцените его?", "");
 
     if (a.length > 50 || a != null || b != null && a != '' && b != '') continue label;
 
@@ -26,3 +26,5 @@ if (personalMovieDB.count < 10) {
 } else {
     console.log("Произошла ошибка");
 }
+
+console.log(personalMovieDB);
